@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/address-formatter/address-formatter.iml" filepath="$PROJECT_DIR$/address-formatter/address-formatter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/address-formatter-demo.iml" filepath="$PROJECT_DIR$/address-formatter-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ui-test/ui-test.iml" filepath="$PROJECT_DIR$/ui-test/ui-test.iml" />
+    </modules>
+  </component>
+</project>

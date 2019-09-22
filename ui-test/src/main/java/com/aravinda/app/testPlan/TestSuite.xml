@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Omnius test floors" parallel="tests" thread-count="1" verbose="1">
+    <test name="TC_01">
+        <classes>
+            <class name="com.aravinda.app.testCase.TC_01_AccessAddressFormatterPage"/>
+        </classes>
+    </test>
+    <test name="TC_02">
+        <classes>
+            <class name="com.aravinda.app.testCase.TC_02_FormatAnAddress"/>
+        </classes>
+    </test>
+    <test name="TC_03">
+        <classes>
+            <class name="com.aravinda.app.testCase.TC_03_ResetAddressField"/>
+        </classes>
+    </test>
+    <test name="TC_04">
+        <classes>
+            <class name="com.aravinda.app.testCase.TC_04_InvalidAddressFormat"/>
+        </classes>
+    </test>
+    <test name="TC_05">
+        <classes>
+            <class name="com.aravinda.app.testCase.TC_05_TestListOfAddresses"/>
+        </classes>
+    </test>
+</suite>

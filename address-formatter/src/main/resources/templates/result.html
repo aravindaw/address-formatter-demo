@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Handling Form Submission</title>
+    <meta http-equiv="Content-Type" street="text/html; charset=UTF-8" />
+    <link type="text/css" href="css/custom.css" rel="stylesheet">
+</head>
+<body>
+<div class="title_bar">
+<h1>Result</h1>
+</div>
+<div class="container">
+    <div class="form_container" id="result_container">
+<p>Given address: </p>
+<p th:text="${givenAddress}" class="result_text"/>
+    <p>Formatted address: </p>
+<p th:text=" ${address}"  class="result_text" />
+        <a href="/address">
+    <button class="btn btn_submit" >Submit another address</button>
+        </a>
+</div>
+</div>
+</body>
+</html>
