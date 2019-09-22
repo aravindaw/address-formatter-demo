@@ -50,8 +50,7 @@ This project includes a maven child project called "ui-test" which demonstrates 
 "ui-test" has three main sections as, *Test Case*, *Script* and *Contexts*. Scripts and Contexts are reusable 
 hence the framework follows DRY principal as much as possible. There is a separate test case class for each and 
 every test case and with few code lines we can declare what we need to capture from the Web-page and what we 
-need to serve as input. Also, we can add *Test Case Precondition Blocks* in Test case. I used  
-*Page Object model* to improve the framework.    
+need to serve as input. Also, we can add *Test Case Precondition Blocks* in Test case. I used *Page Object model* to improve the framework.    
 
 ##### Requirements to run UI test cases
 - UI test automation in this project only work with Mac operating system. But it can be enhanced to work with other operating system as future work.
