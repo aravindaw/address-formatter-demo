@@ -7,8 +7,6 @@
           <element id="module-output" name="ui-test" />
         </element>
         <element id="directory" name="lib">
-          <element id="library" level="project" name="Maven: org.testng:testng:7.0.0-beta3" />
-          <element id="library" level="project" name="Maven: com.beust:jcommander:1.72" />
           <element id="library" level="project" name="Maven: org.seleniumhq.selenium:selenium-java:3.141.59" />
           <element id="library" level="project" name="Maven: org.seleniumhq.selenium:selenium-api:3.141.59" />
           <element id="library" level="project" name="Maven: org.seleniumhq.selenium:selenium-chrome-driver:3.141.59" />
@@ -55,6 +53,7 @@
           <element id="library" level="project" name="Maven: org.eclipse.jetty.websocket:websocket-common:9.4.12.v20180830" />
           <element id="library" level="project" name="Maven: org.eclipse.jetty.websocket:websocket-api:9.4.12.v20180830" />
           <element id="library" level="project" name="Maven: org.seleniumhq.selenium:selenium-server:3.141.59" />
+          <element id="library" level="project" name="Maven: com.beust:jcommander:1.72" />
           <element id="library" level="project" name="Maven: net.jcip:jcip-annotations:1.0" />
           <element id="library" level="project" name="Maven: org.seleniumhq.selenium:jetty-repacked:9.4.12.v20180830" />
           <element id="library" level="project" name="Maven: javax.servlet:javax.servlet-api:3.1.0" />
@@ -67,6 +66,7 @@
           <element id="library" level="project" name="Maven: commons-beanutils:commons-beanutils:1.7.0" />
           <element id="library" level="project" name="Maven: commons-beanutils:commons-beanutils-core:1.8.0" />
           <element id="library" level="project" name="Maven: log4j:log4j:1.2.17" />
+          <element id="library" level="project" name="Maven: org.testng:testng:7.0.0" />
         </element>
       </element>
       <element id="directory" name="META-INF">

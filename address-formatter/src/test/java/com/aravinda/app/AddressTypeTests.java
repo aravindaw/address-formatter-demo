@@ -3,7 +3,7 @@ package com.aravinda.app;
 import org.apache.log4j.Logger;
 import org.json.simple.JSONObject;
 import org.junit.Assert;
-import org.junit.Test;
+import org.testng.annotations.Test;
 
 
 public class AddressTypeTests {
