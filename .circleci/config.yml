@@ -38,8 +38,8 @@ jobs:
         key: v1-dependencies-{{ checksum "pom.xml" }}
 
     # run tests!
-     - run:
-         command: |
-           cd address-formatter
-           mvn integration-test
-           mvn spring-boot:run
+    - run:
+        command: |
+          cd address-formatter
+          mvn integration-test
+          mvn spring-boot:run
