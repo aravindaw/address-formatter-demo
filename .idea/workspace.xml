@@ -36,7 +36,7 @@
           <entry key="java" value="93" />
           <entry key="md" value="2" />
           <entry key="properties" value="6" />
-          <entry key="xml" value="16" />
+          <entry key="xml" value="17" />
           <entry key="yml" value="2" />
         </counts>
       </usages-collector>
@@ -49,7 +49,7 @@
           <entry key="Markdown" value="2" />
           <entry key="PLAIN_TEXT" value="5" />
           <entry key="Properties" value="6" />
-          <entry key="XML" value="16" />
+          <entry key="XML" value="17" />
           <entry key="YAML" value="2" />
         </counts>
       </usages-collector>
@@ -59,9 +59,9 @@
           <entry key="html" value="19" />
           <entry key="java" value="2678" />
           <entry key="md" value="436" />
-          <entry key="properties" value="8" />
-          <entry key="xml" value="148" />
-          <entry key="yml" value="111" />
+          <entry key="properties" value="11" />
+          <entry key="xml" value="151" />
+          <entry key="yml" value="112" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -70,27 +70,15 @@
           <entry key="JAVA" value="2678" />
           <entry key="Markdown" value="436" />
           <entry key="PLAIN_TEXT" value="19" />
-          <entry key="Properties" value="8" />
-          <entry key="XML" value="148" />
-          <entry key="YAML" value="111" />
+          <entry key="Properties" value="11" />
+          <entry key="XML" value="151" />
+          <entry key="YAML" value="112" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ui-test/src/main/java/com/aravinda/app/testCase/TC_04_InvalidAddressFormat.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="31" column="41" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ui-test/src/main/java/com/aravinda/app/testCase/TC_06_InvalidAddressFormat_IntOnly.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -103,8 +91,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="50" column="10" selection-start-line="50" selection-start-column="10" selection-end-line="50" selection-end-column="30" />
+            <state relative-caret-position="302">
+              <caret line="45" column="26" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -112,8 +100,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ui-test/src/main/resources/config.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+            <state relative-caret-position="39">
+              <caret line="3" column="50" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ui-test/src/main/java/com/aravinda/app/testPlan/TestSuite.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="354">
+              <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -243,13 +240,11 @@
         <option value="$PROJECT_DIR$/ui-test/src/main/java/com/aravinda/app/baseScript/IE.java" />
         <option value="$PROJECT_DIR$/ui-test/src/main/java/com/aravinda/app/baseScript/BrowserFactory.java" />
         <option value="$PROJECT_DIR$/ui-test/src/main/java/com/aravinda/app/baseScript/Chrome.java" />
-        <option value="$PROJECT_DIR$/ui-test/src/main/resources/config.properties" />
         <option value="$PROJECT_DIR$/ui-test/src/main/java/com/aravinda/app/testCase/TC_02_FormatAnAddress.java" />
         <option value="$PROJECT_DIR$/ui-test/src/main/java/com/aravinda/app/testCase/TC_03_ResetAddressField.java" />
         <option value="$PROJECT_DIR$/ui-test/src/main/java/com/aravinda/app/testCase/TC_05_TestListOfAddresses.java" />
         <option value="$PROJECT_DIR$/ui-test/src/main/java/com/aravinda/app/baseScript/Browser.java" />
         <option value="$PROJECT_DIR$/ui-test/src/main/java/com/aravinda/app/testCase/TC_01_AccessAddressFormatterPage.java" />
-        <option value="$PROJECT_DIR$/ui-test/src/main/java/com/aravinda/app/testPlan/TestSuite.xml" />
         <option value="$PROJECT_DIR$/ui-test/src/main/java/com/aravinda/app/baseScript/BaseDriver.java" />
         <option value="$PROJECT_DIR$/address-formatter/src/test/java/com/aravinda/app/InvalidAddressTypeTests.java" />
         <option value="$PROJECT_DIR$/ui-test/src/main/java/com/aravinda/app/testCase/TC_04_InvalidAddressFormat.java" />
@@ -258,6 +253,8 @@
         <option value="$PROJECT_DIR$/address-formatter/src/test/java/com/aravinda/app/InvalidAddressIntOnlyTests.java" />
         <option value="$PROJECT_DIR$/address-formatter/src/main/java/com/aravinda/app/AddressServicesImpl.java" />
         <option value="$PROJECT_DIR$/ui-test/src/main/java/com/aravinda/app/testCase/TC_06_InvalidAddressFormat_IntOnly.java" />
+        <option value="$PROJECT_DIR$/ui-test/src/main/java/com/aravinda/app/testPlan/TestSuite.xml" />
+        <option value="$PROJECT_DIR$/ui-test/src/main/resources/config.properties" />
         <option value="$PROJECT_DIR$/.circleci/config.yml" />
       </list>
     </option>
@@ -298,11 +295,6 @@
               <item name="address-formatter-demo" type="462c0819:PsiDirectoryNode" />
               <item name=".circleci" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="address-formatter-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="address-formatter-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="ui-test" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -316,7 +308,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/aravindaweerasekara/projects/address-formatter-demo/ui-test/src/main/java/com/aravinda/app/page/AddressInputPage.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570103858790" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570105741907" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -544,7 +536,7 @@
       <workItem from="1569586892419" duration="840000" />
       <workItem from="1570001829605" duration="7846000" />
       <workItem from="1570029424795" duration="271000" />
-      <workItem from="1570030278829" duration="26631000" />
+      <workItem from="1570030278829" duration="28243000" />
     </task>
     <servers />
   </component>
@@ -581,7 +573,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56267000" />
+    <option name="totallyTimeSpent" value="57879000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -890,13 +882,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ui-test/src/main/java/com/aravinda/app/testPlan/TestSuite.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="29" column="50" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ui-test/src/main/java/com/aravinda/app/testCase/TC_05_TestListOfAddresses.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="302">
@@ -979,17 +964,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ui-test/src/main/java/com/aravinda/app/testPlan/TestSuite.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ui-test/src/main/resources/config.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+        <state relative-caret-position="39">
+          <caret line="3" column="50" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.circleci/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="50" column="10" selection-start-line="50" selection-start-column="10" selection-end-line="50" selection-end-column="30" />
+        <state relative-caret-position="302">
+          <caret line="45" column="26" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
         </state>
       </provider>
     </entry>

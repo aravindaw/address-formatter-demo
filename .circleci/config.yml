@@ -43,9 +43,11 @@ jobs:
           cd address-formatter
           mvn integration-test
           mvn spring-boot:run
+          background: true
 
     # run unit tests!
     - run:
         command: |
           cd ui-test
           mvn integration-test
+          kill -9 $(ps aux | grep 'spring-boot:run' | awk '{print $2}')
