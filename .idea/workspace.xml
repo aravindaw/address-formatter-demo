@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f202a18a-0203-4436-acdc-8bff71e43c91" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.circleci/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.circleci/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui-test/src/main/resources/chromedriver" beforeDir="false" afterPath="$PROJECT_DIR$/ui-test/src/main/resources/chromedriverMAC" afterDir="false" />
-    </list>
+    <list default="true" id="f202a18a-0203-4436-acdc-8bff71e43c91" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/address-formatter/target/" />
     <ignored path="$PROJECT_DIR$/ui-test/target/" />
@@ -294,6 +290,37 @@
               <item name="address-formatter-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="address-formatter-demo" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="address-formatter-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="address-formatter-demo" type="462c0819:PsiDirectoryNode" />
+              <item name=".circleci" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="address-formatter-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="address-formatter-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="ui-test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="address-formatter-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="address-formatter-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="ui-test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="address-formatter-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="address-formatter-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="ui-test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="address-formatter-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="address-formatter-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="ui-test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -307,7 +334,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/aravindaweerasekara/projects/address-formatter-demo/ui-test/src/main/java/com/aravinda/app/page/AddressInputPage.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570100268660" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570101688122" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -535,7 +562,7 @@
       <workItem from="1569586892419" duration="840000" />
       <workItem from="1570001829605" duration="7846000" />
       <workItem from="1570029424795" duration="271000" />
-      <workItem from="1570030278829" duration="24406000" />
+      <workItem from="1570030278829" duration="24934000" />
     </task>
     <servers />
   </component>
@@ -572,7 +599,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54042000" />
+    <option name="totallyTimeSpent" value="54570000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -586,7 +613,7 @@
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="825" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25679544" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25679544" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -601,7 +628,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3287858" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3287858" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3287858" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Java Enterprise" order="9" weight="0.3287858" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
