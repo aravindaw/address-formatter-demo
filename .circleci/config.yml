@@ -42,7 +42,7 @@ jobs:
         command: |
           cd address-formatter
           mvn integration-test
-          mvn spring-boot:run
+          mvn spring-boot:run &
           background: true
 
     # run unit tests!
