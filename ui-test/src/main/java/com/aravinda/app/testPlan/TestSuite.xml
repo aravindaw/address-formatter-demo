@@ -32,4 +32,10 @@
             <class name="com.aravinda.app.testCase.TC_05_TestListOfAddresses"/>
         </classes>
     </test>
+    <test name="TC_06">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.aravinda.app.testCase.TC_06_InvalidAddressFormat_IntOnly"/>
+        </classes>
+    </test>
 </suite>

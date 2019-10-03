@@ -37,9 +37,15 @@ jobs:
         - ~/.m2
         key: v1-dependencies-{{ checksum "pom.xml" }}
 
-    # run tests!
+    # run unit tests!
     - run:
         command: |
           cd address-formatter
           mvn integration-test
           mvn spring-boot:run
+
+    # run unit tests!
+    - run:
+        command: |
+          cd ui-test
+          mvn integration-test
