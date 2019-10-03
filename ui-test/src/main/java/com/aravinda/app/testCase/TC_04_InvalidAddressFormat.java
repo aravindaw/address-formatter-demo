@@ -9,16 +9,27 @@ import org.testng.annotations.Test;
 public class TC_04_InvalidAddressFormat extends BaseDriver {
 
     @BeforeMethod
-    public void preconditions(){
+    public void preconditions() {
         new TC_01_AccessAddressFormatterPage().access();
 
     }
 
     @Test
-    public void formatAnAddress(){
+    public void formatAnAddress() {
         AddressContext context = new AddressContext();
-        context.setAddress(new String[]{"InvalidAddress"});
-        context.setResult(new String[]{"{\"given format\":\"Invalid\"}"});
+        String[] addressList = {
+                "Test Address",
+                "Sample invalid address 45 46",
+                "InvalidAddress"
+
+        };
+        String[] expectedResults = {
+                "{\"given format\":\"Invalid\"}",
+                "{\"given format\":\"Invalid\"}",
+                "{\"given format\":\"Invalid\"}"
+        };
+        context.setAddress(addressList);
+        context.setResult(expectedResults);
         FormatAnAddressScript script = new FormatAnAddressScript(context);
         script.format();
     }
