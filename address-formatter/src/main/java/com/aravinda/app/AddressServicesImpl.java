@@ -13,19 +13,17 @@ public class AddressServicesImpl implements AddressServices {
     private String street = null;
     private String houseNumber = null;
 
-
     private int length = 0;
     private int intBlocks = 0;
     private String[] splittedAddress;
     private String tempHouseNumber;
-    private ArrayList<String> houseNumberArray = new ArrayList<String>();
-    private ArrayList<String> streetArray = new ArrayList<String>();
-    private ArrayList<String> houseNumberSpecialSymbols = new ArrayList<String>(Arrays.asList("#", "No", "Number"));
-    private JSONObject jsonObject = new JSONObject();
+    private ArrayList<String> houseNumberArray = new ArrayList<>();
+    private ArrayList<String> streetArray = new ArrayList<>();
     private static final Logger logger = LogManager.getLogger(AddressServicesImpl.class);
 
     @Override
     public JSONObject input(String adrs) {
+        JSONObject jsonObject = new JSONObject();
 
         intChecker(adrs);
         //Multi parts address with street and house number e.g.:Winterallee 3,Auf der Vogelwiese 23 b
@@ -34,11 +32,11 @@ public class AddressServicesImpl implements AddressServices {
         }
         //Multi parts address with street and house number including a character e.g.:"Blaufeldweg 123B"
         else if (intBlocks == 0 && splittedAddress.length >= 2) {
-            for (String x : streetArray) {
-                if (x.matches("([0-9])\\w+([a-z,A-Z])")) {
-                    houseNumber = x;
-                } else if (x.matches("([nN]o[0-9])") || (x.matches("([#][0-9])")) || (x.matches("([nN]umber[0-9])"))) {
-                    houseNumber = x;
+            for (String chunkOfAddress : streetArray) {
+                if (chunkOfAddress.matches("([0-9])\\w+([a-z,A-Z])")) {
+                    houseNumber = chunkOfAddress;
+                } else if (chunkOfAddress.matches("([nN]o[0-9])") || (chunkOfAddress.matches("([#][0-9])")) || (chunkOfAddress.matches("([nN]umber[0-9])"))) {
+                    houseNumber = chunkOfAddress;
                 }
             }
             if (houseNumber != null) {
@@ -57,7 +55,7 @@ public class AddressServicesImpl implements AddressServices {
             street = "Invalid";
         }
 
-        if (houseNumber == null || street == null || houseNumber == "Invalid" || street == "Invalid") {
+        if (houseNumber == null || street == null || houseNumber.equals("Invalid") || street.equals("Invalid")) {
             jsonObject.put("given format", "Invalid");
             return jsonObject;
         } else {
@@ -105,6 +103,7 @@ public class AddressServicesImpl implements AddressServices {
     }
 
     private void checkSpecialCharacters() {
+        ArrayList<String> houseNumberSpecialSymbols = new ArrayList<>(Arrays.asList("#", "No", "Number"));
         for (String specialSymbol : houseNumberSpecialSymbols) {
             if (streetArray.contains(specialSymbol) && splittedAddress[length - 2].equals(specialSymbol)) {
                 String[] part = address.split(specialSymbol);

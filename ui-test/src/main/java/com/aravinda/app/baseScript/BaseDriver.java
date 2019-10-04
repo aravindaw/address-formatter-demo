@@ -1,6 +1,7 @@
 package com.aravinda.app.baseScript;
 
 import org.apache.commons.configuration.CompositeConfiguration;
+import org.apache.commons.configuration.ConfigurationException;
 import org.apache.commons.configuration.PropertiesConfiguration;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -22,7 +23,7 @@ public class BaseDriver {
         CompositeConfiguration config = new CompositeConfiguration();
         try {
             config.addConfiguration(new PropertiesConfiguration("src/main/resources/config.properties"));
-        } catch (org.apache.commons.configuration.ConfigurationException e) {
+        } catch (ConfigurationException e) {
             e.printStackTrace();
         }
         switch (browser) {
