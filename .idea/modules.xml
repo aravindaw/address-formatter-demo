@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/address-formatter/address-formatter.iml" filepath="$PROJECT_DIR$/address-formatter/address-formatter.iml" />
       <module fileurl="file://$PROJECT_DIR$/address-formatter-demo.iml" filepath="$PROJECT_DIR$/address-formatter-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/ui-test/ui-test.iml" filepath="$PROJECT_DIR$/ui-test/ui-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ui-test-with-seleniumx/ui-test-with-seleniumx.iml" filepath="$PROJECT_DIR$/ui-test-with-seleniumx/ui-test-with-seleniumx.iml" />
     </modules>
   </component>
 </project>

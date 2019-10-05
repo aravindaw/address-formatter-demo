@@ -8,12 +8,14 @@
         <outputRelativeToContentRoot value="true" />
         <module name="address-formatter" />
         <module name="ui-test" />
+        <module name="ui-test-with-seleniumx" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="address-formatter" target="11" />
       <module name="address-formatter-demo" target="1.5" />
       <module name="ui-test" target="11" />
+      <module name="ui-test-with-seleniumx" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
