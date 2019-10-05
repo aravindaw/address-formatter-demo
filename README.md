@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/aravindaw/address-formatter-demo/tree/master.svg?style=svg)](https://circleci.com/gh/aravindaw/address-formatter-demo/tree/master)
+
 # Project address-formatter-demo
 This code solution converts a string of address in to a JSON object. The constructed JSON object will contain a separate key/value pair for street name 
 and house number. 
