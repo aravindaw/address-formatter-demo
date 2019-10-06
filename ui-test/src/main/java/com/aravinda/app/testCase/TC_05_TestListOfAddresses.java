@@ -20,7 +20,8 @@ public class TC_05_TestListOfAddresses extends BaseDriver {
         String[] addressList = {
                 "Winterallee 3",
                 "Musterstrasse 45",
-                "Blaufeldweg 123B", "Am Bächle 23",
+                "Blaufeldweg 123B",
+                "Am Bächle 23",
                 "Auf der Vogelwiese 23 b",
                 "4, rue de la revolution",
                 "200 Broadway Av",

@@ -7,26 +7,87 @@ import org.json.simple.JSONObject;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+/**
+ * Address Formater implementation class
+ *
+ * @author Aravinda Weerasekara
+ */
 public class AddressServicesImpl implements AddressServices {
 
+    /**
+     * The privet address to hold full address values
+     */
     private String address = null;
+
+    /**
+     * The privet street to hold string street values
+     */
     private String street = null;
+
+    /**
+     * The privet houseNumber to hold string value of the house number
+     */
     private String houseNumber = null;
 
+    /**
+     * The privet length instance variable to hold block count of the address
+     */
     private int length = 0;
+
+    /**
+     * The privet length instance variable to hold int block counts
+     */
     private int intBlocks = 0;
+
+    /**
+     * The String[] splittedAddress to hold splitted addresses as an array
+     */
     private String[] splittedAddress;
+
+    /**
+     * The String tempHouseNumber to hold a house number value
+     */
     private String tempHouseNumber;
+
+    /**
+     * the houseNumberArray arrayList keeps values while int checker completing the int block search
+     */
     private ArrayList<String> houseNumberArray = new ArrayList<>();
+
+    /**
+     * the streetArray arrayList keeps values while check the special characters
+     */
     private ArrayList<String> streetArray = new ArrayList<>();
+
+    /**
+     * logger for login purpose
+     */
     private static final Logger logger = LogManager.getLogger(AddressServicesImpl.class);
 
+    /**
+     * <p>input method called by the addressController.addressSubmit method.
+     * In this method it will seperate the address into several parts by count of int blocks
+     * and count of the address splitted parts. <br>
+     * ==========Types of address checker=========<br>
+     * - address with a single int bloc and single or multi string blocks <br>
+     * - Address without int block but have multiple string blocks (More than or equals to 2 ) which could be have a int block with special character or comma<br>
+     * - Address with multiple int blocks and multiple string blocks<br>
+     * - Else it should be invalid address type<br>
+     * ==========Return values=========<br>
+     * if houseNumber == null or street == null or houseNumber.equals("Invalid") or street.equals("Invalid") <br>
+     * then return JSON object with invalid address type <br>
+     * else return the valid address as a JSON object
+     * </p>
+     *
+     * @param adrs address which will input by the user
+     * @return String address
+     */
     @Override
     public JSONObject input(String adrs) {
         JSONObject jsonObject = new JSONObject();
 
         intChecker(adrs);
-        //Multi parts address with street and house number e.g.:Winterallee 3,Auf der Vogelwiese 23 b
+        // Multi parts address with street and house number e.g.:Winterallee 3,Auf der Vogelwiese 23 b
         if (intBlocks == 1) {
             singleIntBlock(address);
         }
@@ -66,6 +127,14 @@ public class AddressServicesImpl implements AddressServices {
         }
     }
 
+    /**
+     * <p>This method checks the count of int block that have in an address input.
+     * Method input() will pass all values to this method at the first stage to identify the int blocks.
+     * There is no return value but this method with populate the instance variable to use in other methods.
+     * </p>
+     *
+     * @param adrs address which will input by the user
+     */
     private void intChecker(String adrs) {
         address = adrs.replace(",", "").trim();
         splittedAddress = address.split(" ");
@@ -82,6 +151,14 @@ public class AddressServicesImpl implements AddressServices {
         }
     }
 
+    /**
+     * <p>There is only one int block fount in the address. But we need to check how many string blocks are there.
+     * This method counts the String parts it can be identified. Else it will call the checkSpecialCharacters() to
+     * identify the special characters.
+     * </p>
+     *
+     * @param address address which will input by the user
+     */
     private void singleIntBlock(String address) {
         houseNumber = houseNumberArray.get(0);
         street = streetArray.get(0);
@@ -102,6 +179,12 @@ public class AddressServicesImpl implements AddressServices {
         }
     }
 
+    /**
+     * <p>Assume there is only one int block and other string parts need to check whether they are any int concatenate
+     * with special character ot alphabetic character.
+     * </p>
+     *
+     */
     private void checkSpecialCharacters() {
         ArrayList<String> houseNumberSpecialSymbols = new ArrayList<>(Arrays.asList("#", "No", "Number"));
         for (String specialSymbol : houseNumberSpecialSymbols) {
