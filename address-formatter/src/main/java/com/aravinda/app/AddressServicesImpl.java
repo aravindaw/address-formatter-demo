@@ -94,9 +94,9 @@ public class AddressServicesImpl implements AddressServices {
         //Multi parts address with street and house number including a character e.g.:"Blaufeldweg 123B"
         else if (intBlocks == 0 && splittedAddress.length >= 2) {
             for (String chunkOfAddress : streetArray) {
-                if (chunkOfAddress.matches("([0-9])\\w+([a-z,A-Z])")) {
+                if (chunkOfAddress.matches("(\\d+)\\w+([a-z,A-Z])")) {
                     houseNumber = chunkOfAddress;
-                } else if (chunkOfAddress.matches("([nN]o[0-9])") || (chunkOfAddress.matches("([#][0-9])")) || (chunkOfAddress.matches("([nN]umber[0-9])"))) {
+                } else if (chunkOfAddress.matches("([nN]o(.*?)\\d+)") || (chunkOfAddress.matches("([#]\\d+)")) || (chunkOfAddress.matches("([nN]umber(.*?)\\d+)"))) {
                     houseNumber = chunkOfAddress;
                 }
             }
