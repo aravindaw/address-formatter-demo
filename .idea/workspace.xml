@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f202a18a-0203-4436-acdc-8bff71e43c91" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/address-formatter/src/main/java/com/aravinda/app/AddressServicesImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/address-formatter/src/main/java/com/aravinda/app/AddressServicesImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/address-formatter/src/test/java/com/aravinda/app/AddressTypeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/address-formatter/src/test/java/com/aravinda/app/AddressTypeTests.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/address-formatter/target/" />
@@ -64,7 +64,7 @@
         <counts>
           <entry key="gitignore" value="63" />
           <entry key="html" value="19" />
-          <entry key="java" value="7334" />
+          <entry key="java" value="7403" />
           <entry key="md" value="436" />
           <entry key="properties" value="59" />
           <entry key="xml" value="239" />
@@ -74,7 +74,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="19" />
-          <entry key="JAVA" value="7334" />
+          <entry key="JAVA" value="7403" />
           <entry key="Markdown" value="436" />
           <entry key="PLAIN_TEXT" value="63" />
           <entry key="Properties" value="59" />
@@ -95,7 +95,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/address-formatter/src/main/java/com/aravinda/app/AddressServicesImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="302">
@@ -104,11 +104,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/address-formatter/src/test/java/com/aravinda/app/AddressTypeTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="137" column="41" selection-start-line="137" selection-start-column="41" selection-end-line="137" selection-end-column="41" />
+            <state relative-caret-position="355">
+              <caret line="192" column="50" selection-start-line="192" selection-start-column="50" selection-end-line="192" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -153,7 +153,7 @@
         <entry file="jar://$USER_HOME$/installs/jdk-11.0.4.jdk/Contents/Home/lib/src.zip!/java.base/java/util/regex/Matcher.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="641" column="7" lean-forward="true" selection-start-line="641" selection-start-column="7" selection-end-line="641" selection-end-column="7" />
+              <caret line="641" column="7" selection-start-line="641" selection-start-column="7" selection-end-line="641" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -193,7 +193,11 @@
       <find>common</find>
       <find>Base</find>
       <find>java</find>
+      <find>Number</find>
     </findStrings>
+    <replaceStrings>
+      <replace>AddressServicesNewImp</replace>
+    </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
     </dirStrings>
@@ -207,7 +211,6 @@
         <option value="$PROJECT_DIR$/address-formatter/src/main/resources/static/index.html" />
         <option value="$PROJECT_DIR$/address-formatter/src/test/java/com/aravinda/app/ApplicationTests.java" />
         <option value="$PROJECT_DIR$/address-formatter/src/test/java/com/aravinda/app/JsonFormatValidateTest.java" />
-        <option value="$PROJECT_DIR$/address-formatter/src/test/java/com/aravinda/app/AddressTypeTests.java" />
         <option value="$PROJECT_DIR$/ui-test/src/main/java/com/aravinda/app/baseScript/BrowserEnum.java" />
         <option value="$PROJECT_DIR$/ui-test/src/main/java/com/aravinda/app/baseScript/Firefox.java" />
         <option value="$PROJECT_DIR$/ui-test/src/main/java/com/aravinda/app/baseScript/IE.java" />
@@ -255,6 +258,7 @@
         <option value="$PROJECT_DIR$/address-formatter/src/main/java/com/aravinda/app/Address.java" />
         <option value="$PROJECT_DIR$/address-formatter/src/main/java/com/aravinda/app/Application.java" />
         <option value="$PROJECT_DIR$/address-formatter/src/main/java/com/aravinda/app/AddressServicesImpl.java" />
+        <option value="$PROJECT_DIR$/address-formatter/src/test/java/com/aravinda/app/AddressTypeTests.java" />
       </list>
     </option>
   </component>
@@ -305,14 +309,14 @@
               <item name="address-formatter-demo" type="462c0819:PsiDirectoryNode" />
               <item name="address-formatter" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="address-formatter-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="address-formatter-demo" type="462c0819:PsiDirectoryNode" />
               <item name="address-formatter" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -320,7 +324,7 @@
               <item name="address-formatter-demo" type="462c0819:PsiDirectoryNode" />
               <item name="address-formatter" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -342,7 +346,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/aravindaweerasekara/projects/address-formatter-demo/ui-test/src/main/java/com/aravinda/app/page/AddressInputPage.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570905793062" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570906282406" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -383,11 +387,27 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.FailingTestScenario">
+  <component name="RunManager" selected="TestNG.AddressTypeTests">
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="address-formatter" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.aravinda.app.Application" />
       <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AddressTypeTests" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="address-formatter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.aravinda.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.aravinda.app" />
+      <option name="MAIN_CLASS_NAME" value="com.aravinda.app.AddressTypeTests" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -428,24 +448,6 @@
         <value defaultName="moduleWithDependencies" />
       </option>
       <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HappyFlowTestScenario.testCase" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="ui-test-with-seleniumx" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.aravinda.app.testCase.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.aravinda.app.testCase" />
-      <option name="MAIN_CLASS_NAME" value="com.aravinda.app.testCase.HappyFlowTestScenario" />
-      <option name="METHOD_NAME" value="testCase" />
-      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -550,17 +552,17 @@
       <item itemvalue="Spring Boot.Application" />
       <item itemvalue="TestNG.TC_01_AccessAddressFormatterPage" />
       <item itemvalue="TestNG.HappyFlowTestScenario" />
-      <item itemvalue="TestNG.HappyFlowTestScenario.testCase" />
       <item itemvalue="TestNG.FailingTestScenario" />
       <item itemvalue="TestNG.TC_02_FormatAnAddress" />
+      <item itemvalue="TestNG.AddressTypeTests" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.AddressTypeTests" />
         <item itemvalue="TestNG.FailingTestScenario" />
         <item itemvalue="TestNG.TC_02_FormatAnAddress" />
         <item itemvalue="TestNG.TC_01_AccessAddressFormatterPage" />
         <item itemvalue="TestNG.HappyFlowTestScenario" />
-        <item itemvalue="TestNG.HappyFlowTestScenario.testCase" />
       </list>
     </recent_temporary>
   </component>
@@ -620,7 +622,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="130399000" />
+    <option name="totallyTimeSpent" value="130917000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -634,7 +636,7 @@
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="825" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27825466" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27825466" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -649,7 +651,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3287858" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32742155" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32742155" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Java Enterprise" order="9" weight="0.3287858" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
@@ -773,13 +775,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="52">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/address-formatter/src/test/java/com/aravinda/app/AddressTypeTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="137" column="41" selection-start-line="137" selection-start-column="41" selection-end-line="137" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -992,6 +987,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="302">
           <caret line="98" column="154" selection-start-line="98" selection-start-column="154" selection-end-line="98" selection-end-column="154" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/address-formatter/src/test/java/com/aravinda/app/AddressTypeTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="192" column="50" selection-start-line="192" selection-start-column="50" selection-end-line="192" selection-end-column="50" />
         </state>
       </provider>
     </entry>

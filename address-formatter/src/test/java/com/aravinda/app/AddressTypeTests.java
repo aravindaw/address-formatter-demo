@@ -142,4 +142,58 @@ public class AddressTypeTests {
         logger.info("Actual result    : " + result.toJSONString());
     }
 
+    @Test
+    public void addressType13() {
+        String address = "test value no123";
+        formattedAddress.put("street", "test value");
+        formattedAddress.put("housenumber", "no123");
+        JSONObject result = new AddressServicesImpl().input(address);
+        Assert.assertEquals(formattedAddress, result);
+        logger.info("Expected result  : " + formattedAddress.toJSONString());
+        logger.info("Actual result    : " + result.toJSONString());
+    }
+
+    @Test
+    public void addressType14() {
+        String address = "Test value Number234";
+        formattedAddress.put("street", "Test value");
+        formattedAddress.put("housenumber", "Number234");
+        JSONObject result = new AddressServicesImpl().input(address);
+        Assert.assertEquals(formattedAddress, result);
+        logger.info("Expected result  : " + formattedAddress.toJSONString());
+        logger.info("Actual result    : " + result.toJSONString());
+    }
+
+    @Test
+    public void addressType15() {
+        String address = "Number1234 Test value";
+        formattedAddress.put("street", "Test value");
+        formattedAddress.put("housenumber", "Number1234");
+        JSONObject result = new AddressServicesImpl().input(address);
+        Assert.assertEquals(formattedAddress, result);
+        logger.info("Expected result  : " + formattedAddress.toJSONString());
+        logger.info("Actual result    : " + result.toJSONString());
+    }
+
+    @Test
+    public void addressType16() {
+        String address = "# 834, somapah av";
+        formattedAddress.put("street", "somapah av");
+        formattedAddress.put("housenumber", "# 834");
+        JSONObject result = new AddressServicesImpl().input(address);
+        Assert.assertEquals(formattedAddress, result);
+        logger.info("Expected result  : " + formattedAddress.toJSONString());
+        logger.info("Actual result    : " + result.toJSONString());
+    }
+
+    @Test
+    public void addressType17() {
+        String address = "#8343, somapah av";
+        formattedAddress.put("street", "somapah av");
+        formattedAddress.put("housenumber", "#8343");
+        JSONObject result = new AddressServicesImpl().input(address);
+        Assert.assertEquals(formattedAddress, result);
+        logger.info("Expected result  : " + formattedAddress.toJSONString());
+        logger.info("Actual result    : " + result.toJSONString());
+    }
 }
