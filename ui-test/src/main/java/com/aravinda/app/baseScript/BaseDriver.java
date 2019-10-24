@@ -14,7 +14,7 @@ import java.util.concurrent.TimeUnit;
 
 public class BaseDriver {
 
-    protected static WebDriver driver;
+//    protected static WebDriver driver;
 
     @Parameters({"browser"})
     @BeforeTest()
@@ -29,24 +29,24 @@ public class BaseDriver {
         switch (browser) {
             case "chrome":
                 System.setProperty("webdriver.chrome.driver", config.getProperty("CHROME_DRIVER_PATH").toString());
-                driver = new ChromeDriver();
+                Driver.getInstance().driver = new ChromeDriver();
                 break;
             case "firefox":
                 System.setProperty("webdriver.chrome.driver", config.getProperty("FIREFOX_DRIVER_PATH").toString());
-                driver = new ChromeDriver();
+                Driver.getInstance().driver = new ChromeDriver();
                 break;
             default:
                 System.setProperty("webdriver.chrome.driver", config.getProperty("IE_DRIVER_PATH").toString());
-                driver = new ChromeDriver();
+                Driver.getInstance().driver = new ChromeDriver();
                 break;
         }
-        driver.manage().timeouts().implicitlyWait(6000, TimeUnit.MILLISECONDS);
-        driver.get(config.getProperty("BASE_URL").toString());
+        Driver.getInstance().driver.manage().timeouts().implicitlyWait(6000, TimeUnit.MILLISECONDS);
+        Driver.getInstance().driver.get(config.getProperty("BASE_URL").toString());
     }
 
     @AfterTest
     public void exitTestEnvironment() {
-        driver.quit();
+        Driver.getInstance().driver.quit();
     }
 
 }

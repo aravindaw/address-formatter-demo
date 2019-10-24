@@ -1,6 +1,7 @@
 package com.aravinda.app.page;
 
 import com.aravinda.app.baseScript.BaseDriver;
+import com.aravinda.app.baseScript.Driver;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
@@ -28,7 +29,7 @@ public class ResultPage extends BaseDriver {
     private WebElement formattedAddress;
 
     public ResultPage() {
-        PageFactory.initElements(driver, this);
+        PageFactory.initElements(Driver.getInstance().driver, this);
     }
 
     /**
@@ -57,7 +58,7 @@ public class ResultPage extends BaseDriver {
      * Verify that the page loaded completely.
      */
     public ResultPage verifyPageLoaded() {
-        (new WebDriverWait(driver, timeout)).until(new ExpectedCondition<Boolean>() {
+        (new WebDriverWait(Driver.getInstance().driver, timeout)).until(new ExpectedCondition<Boolean>() {
             public Boolean apply(WebDriver d) {
                 return d.getPageSource().contains(pageLoadedText);
             }
@@ -69,7 +70,7 @@ public class ResultPage extends BaseDriver {
      * Verify that current page URL matches the expected URL.
      */
     public ResultPage verifyPageUrl() {
-        (new WebDriverWait(driver, timeout)).until(new ExpectedCondition<Boolean>() {
+        (new WebDriverWait(Driver.getInstance().driver, timeout)).until(new ExpectedCondition<Boolean>() {
             public Boolean apply(WebDriver d) {
                 return d.getCurrentUrl().contains(pageUrl);
             }

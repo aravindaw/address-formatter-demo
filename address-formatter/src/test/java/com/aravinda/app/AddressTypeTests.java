@@ -16,9 +16,9 @@ public class AddressTypeTests {
         formattedAddress.put("street", "Winterallee");
         formattedAddress.put("housenumber", "3");
         JSONObject result = new AddressServicesImpl().input(address);
-        Assert.assertEquals(formattedAddress, result);
         logger.info("Expected result  : " + formattedAddress.toJSONString());
         logger.info("Actual result    : " + result.toJSONString());
+        Assert.assertEquals(formattedAddress, result);
     }
 
     @Test
@@ -27,9 +27,9 @@ public class AddressTypeTests {
         formattedAddress.put("street", "Musterstrasse");
         formattedAddress.put("housenumber", "45");
         JSONObject result = new AddressServicesImpl().input(address);
-        Assert.assertEquals(formattedAddress, result);
         logger.info("Expected result  : " + formattedAddress.toJSONString());
         logger.info("Actual result    : " + result.toJSONString());
+        Assert.assertEquals(formattedAddress, result);
     }
 
     @Test
@@ -38,9 +38,9 @@ public class AddressTypeTests {
         formattedAddress.put("street", "Blaufeldweg");
         formattedAddress.put("housenumber", "123B");
         JSONObject result = new AddressServicesImpl().input(address);
-        Assert.assertEquals(formattedAddress, result);
         logger.info("Expected result  : " + formattedAddress.toJSONString());
         logger.info("Actual result    : " + result.toJSONString());
+        Assert.assertEquals(formattedAddress, result);
     }
 
     @Test
@@ -49,9 +49,9 @@ public class AddressTypeTests {
         formattedAddress.put("street", "Am Bächle");
         formattedAddress.put("housenumber", "23");
         JSONObject result = new AddressServicesImpl().input(address);
-        Assert.assertEquals(formattedAddress, result);
         logger.info("Expected result  : " + formattedAddress.toJSONString());
         logger.info("Actual result    : " + result.toJSONString());
+        Assert.assertEquals(formattedAddress, result);
     }
 
     @Test
@@ -60,9 +60,9 @@ public class AddressTypeTests {
         formattedAddress.put("street", "Auf der Vogelwiese");
         formattedAddress.put("housenumber", "23 b");
         JSONObject result = new AddressServicesImpl().input(address);
-        Assert.assertEquals(formattedAddress, result);
         logger.info("Expected result  : " + formattedAddress.toJSONString());
         logger.info("Actual result    : " + result.toJSONString());
+        Assert.assertEquals(formattedAddress, result);
     }
 
     @Test
@@ -71,9 +71,9 @@ public class AddressTypeTests {
         formattedAddress.put("street", "rue de la revolution");
         formattedAddress.put("housenumber", "4");
         JSONObject result = new AddressServicesImpl().input(address);
-        Assert.assertEquals(formattedAddress, result);
         logger.info("Expected result  : " + formattedAddress.toJSONString());
         logger.info("Actual result    : " + result.toJSONString());
+        Assert.assertEquals(formattedAddress, result);
     }
 
     @Test
@@ -82,9 +82,9 @@ public class AddressTypeTests {
         formattedAddress.put("street", "Broadway Av");
         formattedAddress.put("housenumber", "200");
         JSONObject result = new AddressServicesImpl().input(address);
-        Assert.assertEquals(formattedAddress, result);
         logger.info("Expected result  : " + formattedAddress.toJSONString());
         logger.info("Actual result    : " + result.toJSONString());
+        Assert.assertEquals(formattedAddress, result);
     }
 
     @Test
@@ -93,9 +93,9 @@ public class AddressTypeTests {
         formattedAddress.put("street", "Calle Aduana");
         formattedAddress.put("housenumber", "29");
         JSONObject result = new AddressServicesImpl().input(address);
-        Assert.assertEquals(formattedAddress, result);
         logger.info("Expected result  : " + formattedAddress.toJSONString());
         logger.info("Actual result    : " + result.toJSONString());
+        Assert.assertEquals(formattedAddress, result);
     }
 
     @Test
@@ -104,9 +104,9 @@ public class AddressTypeTests {
         formattedAddress.put("street", "Calle 39");
         formattedAddress.put("housenumber", "No 1540");
         JSONObject result = new AddressServicesImpl().input(address);
-        Assert.assertEquals(formattedAddress, result);
         logger.info("Expected result  : " + formattedAddress.toJSONString());
         logger.info("Actual result    : " + result.toJSONString());
+        Assert.assertEquals(formattedAddress, result);
     }
 
     @Test
@@ -115,9 +115,9 @@ public class AddressTypeTests {
         formattedAddress.put("street", "somapah av");
         formattedAddress.put("housenumber", "Number 8");
         JSONObject result = new AddressServicesImpl().input(address);
-        Assert.assertEquals(formattedAddress, result);
         logger.info("Expected result  : " + formattedAddress.toJSONString());
         logger.info("Actual result    : " + result.toJSONString());
+        Assert.assertEquals(formattedAddress, result);
     }
 
     @Test
@@ -126,9 +126,9 @@ public class AddressTypeTests {
         formattedAddress.put("street", "somapah av");
         formattedAddress.put("housenumber", "#8");
         JSONObject result = new AddressServicesImpl().input(address);
-        Assert.assertEquals(formattedAddress, result);
         logger.info("Expected result  : " + formattedAddress.toJSONString());
         logger.info("Actual result    : " + result.toJSONString());
+        Assert.assertEquals(formattedAddress, result);
     }
 
     @Test
@@ -137,9 +137,9 @@ public class AddressTypeTests {
         formattedAddress.put("street", "somapah av");
         formattedAddress.put("housenumber", "# 8");
         JSONObject result = new AddressServicesImpl().input(address);
-        Assert.assertEquals(formattedAddress, result);
         logger.info("Expected result  : " + formattedAddress.toJSONString());
         logger.info("Actual result    : " + result.toJSONString());
+        Assert.assertEquals(formattedAddress, result);
     }
 
     @Test
@@ -148,9 +148,9 @@ public class AddressTypeTests {
         formattedAddress.put("street", "test value");
         formattedAddress.put("housenumber", "no123");
         JSONObject result = new AddressServicesImpl().input(address);
-        Assert.assertEquals(formattedAddress, result);
         logger.info("Expected result  : " + formattedAddress.toJSONString());
         logger.info("Actual result    : " + result.toJSONString());
+        Assert.assertEquals(formattedAddress, result);
     }
 
     @Test
@@ -159,9 +159,9 @@ public class AddressTypeTests {
         formattedAddress.put("street", "Test value");
         formattedAddress.put("housenumber", "Number234");
         JSONObject result = new AddressServicesImpl().input(address);
-        Assert.assertEquals(formattedAddress, result);
         logger.info("Expected result  : " + formattedAddress.toJSONString());
         logger.info("Actual result    : " + result.toJSONString());
+        Assert.assertEquals(formattedAddress, result);
     }
 
     @Test
@@ -170,9 +170,9 @@ public class AddressTypeTests {
         formattedAddress.put("street", "Test value");
         formattedAddress.put("housenumber", "Number1234");
         JSONObject result = new AddressServicesImpl().input(address);
-        Assert.assertEquals(formattedAddress, result);
         logger.info("Expected result  : " + formattedAddress.toJSONString());
         logger.info("Actual result    : " + result.toJSONString());
+        Assert.assertEquals(formattedAddress, result);
     }
 
     @Test
@@ -181,9 +181,9 @@ public class AddressTypeTests {
         formattedAddress.put("street", "somapah av");
         formattedAddress.put("housenumber", "# 834");
         JSONObject result = new AddressServicesImpl().input(address);
-        Assert.assertEquals(formattedAddress, result);
         logger.info("Expected result  : " + formattedAddress.toJSONString());
         logger.info("Actual result    : " + result.toJSONString());
+        Assert.assertEquals(formattedAddress, result);
     }
 
     @Test
@@ -192,8 +192,8 @@ public class AddressTypeTests {
         formattedAddress.put("street", "somapah av");
         formattedAddress.put("housenumber", "#8343");
         JSONObject result = new AddressServicesImpl().input(address);
-        Assert.assertEquals(formattedAddress, result);
         logger.info("Expected result  : " + formattedAddress.toJSONString());
         logger.info("Actual result    : " + result.toJSONString());
+        Assert.assertEquals(formattedAddress, result);
     }
 }

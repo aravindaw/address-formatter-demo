@@ -15,9 +15,9 @@ public class InvalidAddressTypeTests {
         String address = "Test Address";
         formattedAddress.put("given format", "Invalid");
         JSONObject result = new AddressServicesImpl().input(address);
-        Assert.assertEquals(formattedAddress, result);
         logger.info("Expected result  : " + formattedAddress.toJSONString());
         logger.info("Actual result    : " + result.toJSONString());
+        Assert.assertEquals(formattedAddress, result);
     }
 
     @Test
@@ -25,9 +25,9 @@ public class InvalidAddressTypeTests {
         String address = "Sample invalid address 45 46";
         formattedAddress.put("given format", "Invalid");
         JSONObject result = new AddressServicesImpl().input(address);
-        Assert.assertEquals(formattedAddress, result);
         logger.info("Expected result  : " + formattedAddress.toJSONString());
         logger.info("Actual result    : " + result.toJSONString());
+        Assert.assertEquals(formattedAddress, result);
     }
 
     @Test
@@ -35,9 +35,19 @@ public class InvalidAddressTypeTests {
         String address = "InvalidAddress";
         formattedAddress.put("given format", "Invalid");
         JSONObject result = new AddressServicesImpl().input(address);
-        Assert.assertEquals(formattedAddress, result);
         logger.info("Expected result  : " + formattedAddress.toJSONString());
         logger.info("Actual result    : " + result.toJSONString());
+        Assert.assertEquals(formattedAddress, result);
+    }
+
+    @Test
+    public void invalidAddressType4() {
+        String address = "3456";
+        formattedAddress.put("given format", "Invalid");
+        JSONObject result = new AddressServicesImpl().input(address);
+        logger.info("Expected result  : " + formattedAddress.toJSONString());
+        logger.info("Actual result    : " + result.toJSONString());
+        Assert.assertEquals(formattedAddress, result);
     }
 
 }

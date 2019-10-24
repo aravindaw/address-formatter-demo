@@ -1,6 +1,7 @@
 package com.aravinda.app.page;
 
 import com.aravinda.app.baseScript.BaseDriver;
+import com.aravinda.app.baseScript.Driver;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -20,7 +21,7 @@ public class FrontPage extends BaseDriver {
     private WebElement clickToContinue;
 
     public FrontPage() {
-        PageFactory.initElements(driver, this);
+        PageFactory.initElements(Driver.getInstance().driver, this);
     }
 
     /**
@@ -36,7 +37,7 @@ public class FrontPage extends BaseDriver {
      * Verify that the page loaded completely.
      */
     public FrontPage verifyPageLoaded() {
-        (new WebDriverWait(driver, timeout)).until(new ExpectedCondition<Boolean>() {
+        (new WebDriverWait(Driver.getInstance().driver, timeout)).until(new ExpectedCondition<Boolean>() {
             public Boolean apply(WebDriver d) {
                 return d.getPageSource().contains(pageLoadedText);
             }
@@ -48,7 +49,7 @@ public class FrontPage extends BaseDriver {
      * Verify that current page URL matches the expected URL.
      */
     public FrontPage verifyPageUrl() {
-        (new WebDriverWait(driver, timeout)).until(new ExpectedCondition<Boolean>() {
+        (new WebDriverWait(Driver.getInstance().driver, timeout)).until(new ExpectedCondition<Boolean>() {
             public Boolean apply(WebDriver d) {
                 return d.getCurrentUrl().contains(pageUrl);
             }

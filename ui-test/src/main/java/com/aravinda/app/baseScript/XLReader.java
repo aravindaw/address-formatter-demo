@@ -22,6 +22,7 @@ public class XLReader {
     private static final Logger logger = Logger.getLogger(XLReader.class);
 
     public String[] getData(int columnNumber) {
+        System.out.println();
         CompositeConfiguration config = new CompositeConfiguration();
         config.addConfiguration(new SystemConfiguration());
         try {
@@ -34,6 +35,7 @@ public class XLReader {
         try {
             FileInputStream fis = new FileInputStream(src);
             workbook = new XSSFWorkbook(fis);
+            fis.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -52,4 +54,17 @@ public class XLReader {
         dataArray = date.toArray(dataArray);
         return dataArray;
     }
+
+    private static XLReader XLReader = null;
+
+    private XLReader() {
+    }
+
+    public static synchronized XLReader getInstance() {
+        if (XLReader == null) {
+            XLReader = new XLReader();
+        }
+        return XLReader;
+    }
+
 }

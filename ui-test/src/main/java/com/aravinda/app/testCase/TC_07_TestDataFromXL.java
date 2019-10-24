@@ -18,8 +18,12 @@ public class TC_07_TestDataFromXL extends BaseDriver {
     @Test
     public void formatListOfAddresses() {
         AddressContext context = new AddressContext();
-        String[] addressList = new XLReader().getData(1);
-        String[] expectedResults = new XLReader().getData(2);
+//        String[] addressList = new XLReader().getData(1);
+//        String[] expectedResults = new XLReader().getData(2);
+
+        XLReader xl = XLReader.getInstance();
+        String[] addressList = xl.getData(1);
+        String[] expectedResults = xl.getData(2);
         context.setAddress(addressList);
         context.setResult(expectedResults);
         FormatAnAddressScript script = new FormatAnAddressScript(context);
