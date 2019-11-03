@@ -18,6 +18,6 @@ public class FailingTestScenario extends TestCase {
     public void testCase() {
         data.put("address", "4444");
         data.put("result", "{\"housenumber\":\"4\",\"street\":\"sdsdfsdf\"}");
-        testCase(data);
+        run(data);
     }
 }

@@ -1,12 +1,13 @@
 package com.aravinda.app.testCase;
 
-import com.aravinda.app.script.HappyFlowTestCase;
+import com.aravinda.app.script.HappyFlowTestCaseWithTestData;
+import org.seleniumx.annotations.Data;
 import org.seleniumx.annotations.DriverSettings;
 import org.seleniumx.annotations.Script;
 import org.seleniumx.util.Set;
 import org.seleniumx.util.TestCase;
 
-public class HappyFlowTestScenario extends TestCase {
+public class HappyFlowTestScenarioWithTestData extends TestCase {
     @DriverSettings(
             OS = Set.OS.MAC,
             WINDOW_SIZE = Set.WINDOW_SIZE.DEFAULT,
@@ -14,10 +15,9 @@ public class HappyFlowTestScenario extends TestCase {
             BASE_URL = "http://localhost:8080/address-formatter-0.0.1-SNAPSHOT",
             IMPLICIT_WAIT = 10000
     )
-    @Script(script = HappyFlowTestCase.class)
+    @Data(path = "/Users/aravindaweerasekara/projects/address-formatter-demo/ui-test/src/main/resources/Testdata.xlsx")
+    @Script(script = HappyFlowTestCaseWithTestData.class)
     public void testCase() {
-        data.put("address", "test address 04");
-        data.put("result","{\"housenumber\":\"04\",\"street\":\"test address\"}");
-        run(data);
+        run();
     }
 }

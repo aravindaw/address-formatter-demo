@@ -18,6 +18,6 @@ public class BadFlowTestScenario extends TestCase {
     public void testCase() {
         data.put("address", "Sample test data");
         data.put("result", "{\"given format\":\"Invalid\"}");
-        testCase(data);
+        run(data);
     }
 }
